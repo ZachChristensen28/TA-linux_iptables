@@ -15,7 +15,7 @@ Indexers | Yes | Conditional | Not required if you use heavy forwarders to colle
 Heavy Forwarders | Yes | Conditional | Not required. This add-on must be installed on either the HF or Indexers.
 
 ## Input Requirements
-Set the sourcetype to "linux:iptables" in the inputs.conf file on the forwarder (see [recommendations below](#Recommendations)).
+Set the sourcetype to "linux:iptables" in the inputs.conf file on the forwarder (see [recommendations below](#recommendations-for-iptables-logging)).
 
 i.e.
 
@@ -27,8 +27,8 @@ disabled = 0
 sourcetype = linux:iptables
 ```
 
-### (#Recommendations) for iptables logging
-Depending on how logging is setup on the linux instance, iptable logs could be writting to the kern.log or syslog. If needed, syslog could be sent directly to splunk and this add-on will transform the sourcetype to linux:iptables (see [Syslog support](#Syslog) below).
+### Recommendations for iptables logging
+Depending on how logging is setup on the linux instance, iptable logs could be writting to the kern.log or syslog. If needed, syslog could be sent directly to splunk and this add-on will transform the sourcetype to linux:iptables (see [Syslog support](#syslog-support) below).
 
 It is recommended to have iptable logs write to it's own file in /var/log. This can be achieved by modifying the configuration files for the type of syslog being used. See the docs for the respective syslog being used.
 
@@ -53,7 +53,7 @@ The above example is matching a unique string for linux iptables and will place 
 
 
 
-#### (#Syslog) support
+### Syslog support
  For this to work, the props.conf file will need to be modified to accept the syslog sourcetype. Simply enable the syslog source type in ../local/props.conf then restart splunk
 
 i.e.
