@@ -9,6 +9,8 @@ access = read : [ * ], write : [ admin, power ]
 [eventtypes]
 export = system
 
+[tags]
+export = system
 
 ### PROPS
 

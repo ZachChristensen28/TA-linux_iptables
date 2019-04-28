@@ -8,3 +8,17 @@ TCP DROP,blocked
 POTENTIAL UDP FLOOD,blocked
 PING DROP,blocked
 PING,allowed
+allowed,allowed
+blocked,blocked
+dropped,blocked
+unknown,unknown
+ACCEPT,allowed
+REJECT,blocked
+DROP,blocked
+LOG,allowed
+CONNECT,allowed
+permit,allowed
+deny,blocked
+drop,blocked
+reject,blocked
+block,blocked
