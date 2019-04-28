@@ -1,0 +1,10 @@
+log_prefix,action
+SSH,allowed
+POTENTIAL SCAN,blocked
+VPN Connection,allowed
+ATTACK,blocked
+Splunk MGMT,allowed
+TCP DROP,blocked
+POTENTIAL UDP FLOOD,blocked
+PING DROP,blocked
+PING,allowed
