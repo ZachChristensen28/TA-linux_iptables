@@ -75,9 +75,8 @@ i.e.
 The above example is matching a unique string for linux iptables and will place each match into "/var/log/iptables.log"
 
 
-
 ### Syslog support
- For this to work, the props.conf file will need to be modified to accept the syslog sourcetype. Simply enable the syslog source type in ../local/props.conf then restart splunk
+ For this to work, the props.conf file will need to be modified to accept the syslog sourcetype. Simply enable the syslog source type in ../local/props.conf then restart splunk.
 
 i.e.
 
@@ -87,6 +86,9 @@ i.e.
 [syslog]
 disabled = false
 ```
+
+## Additional Required Setup
+For the "action" field to work properly, the lookup (iptables_action.csv) will need to be modified to the correct log-prefix that are currently setup in the iptables environment. This informs splunk of the action the iptables took. Failing to do so will result in the action field being "unknown". The appropriate fields to map to would be allowed|blocked|teardown.
 
 ## Bugs
 Please open an issue at [github.com](https://github.com/ZachChristensen28/TA-iptables)
