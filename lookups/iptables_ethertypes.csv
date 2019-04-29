@@ -1,0 +1,52 @@
+FRAME_TYPE,frame_description
+08:00,Internet Protocol version 4 (IPv4)
+08:06,Address Resolution Protocol (ARP)
+08:42,Wake-on-LAN[9]
+22:F3,IETF TRILL Protocol
+22:EA,Stream Reservation Protocol
+60:03,DECnet Phase IV
+80:35,Reverse Address Resolution Protocol
+80:9B,AppleTalk (Ethertalk)
+80:F3,AppleTalk Address Resolution Protocol (AARP)
+81:00,VLAN-tagged frame (IEEE 802.1Q) and Shortest Path Bridging IEEE 802.1aq with NNI compatibility[10]
+81:37,IPX
+82:04,QNX Qnet
+86:DD,Internet Protocol Version 6 (IPv6)
+88:08,Ethernet flow control
+88:09,Ethernet Slow Protocols[11] such as the Link Aggregation Control Protocol
+88:19,CobraNet
+88:47,MPLS unicast
+88:48,MPLS multicast
+88:63,PPPoE Discovery Stage
+88:64,PPPoE Session Stage
+88:6D,Intel Advanced Networking Services [12]
+88:70,Jumbo Frames (Obsoleted draft-ietf-isis-ext-eth-01)
+88:7B,HomePlug 1.0 MME
+88:8E,EAP over LAN (IEEE 802.1X)
+88:92,PROFINET Protocol
+88:9A,HyperSCSI (SCSI over Ethernet)
+88:A2,ATA over Ethernet
+88:A4,EtherCAT Protocol
+88:A8,Provider Bridging (IEEE 802.1ad) & Shortest Path Bridging IEEE 802.1aq[10]
+88:AB,Ethernet Powerlink[citation needed]
+88:B8,GOOSE (Generic Object Oriented Substation event)
+88:B9,GSE (Generic Substation Events) Management Services
+88:BA,SV (Sampled Value Transmission)
+88:CC,Link Layer Discovery Protocol (LLDP)
+88:CD,SERCOS III
+88:DC,WSMP, WAVE Short Message Protocol
+88:E1,HomePlug AV MME[citation needed]
+88:E3,Media Redundancy Protocol (IEC62439-2)
+88:E5,MAC security (IEEE 802.1AE)
+88:E7,Provider Backbone Bridges (PBB) (IEEE 802.1ah)
+88:F7,Precision Time Protocol (PTP) over Ethernet (IEEE 1588)
+88:F8,NC-SI
+88:FB,Parallel Redundancy Protocol (PRP)
+89:02,IEEE 802.1ag Connectivity Fault Management (CFM) Protocol / ITU-T Recommendation Y.1731 (OAM)
+89:06,Fibre Channel over Ethernet (FCoE)
+89:14,FCoE Initialization Protocol
+89:15,RDMA over Converged Ethernet (RoCE)
+89:1D,TTEthernet Protocol Control Frame (TTE)
+89:2F,High-availability Seamless Redundancy (HSR)
+90:00,Ethernet Configuration Testing Protocol[13]
+91:00,VLAN-tagged (IEEE 802.1Q) frame with double tagging
