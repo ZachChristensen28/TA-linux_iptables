@@ -1,5 +1,5 @@
 # TA-iptables
-Splunk Add on for Linux Iptables
+Splunk Add-on for Linux Iptables
 
 ## Sourcetype
 
