@@ -30,9 +30,9 @@ sourcetype = linux:iptables
 ```
 
 ### Iptable Requirements
-If the iptables "log prefix" flag is utilized, setup may be needed to have the fields extracted correctly. This will be built into the add-on in future releases. For now, the transforms.conf file will need to be modified to extract this field correctly.
+If the iptables "log prefix" flag is utilized, further setup may be needed to have the log_prefix field extracted correctly. This will be built into the add-on in future releases. For now, the transforms.conf file will need to be modified to extract this field correctly.
 
-The add-on currently supports the following syntax for the log-prefix field.
+The add-on currently supports the following syntax for the log_prefix field.
 
 ```
 ... ** My log prefix ** ...

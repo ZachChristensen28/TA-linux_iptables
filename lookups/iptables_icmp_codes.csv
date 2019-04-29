@@ -1,4 +1,4 @@
-icmp_code,Name
+TYPE,icmp_code
 0,Echo Reply
 1,Unassigned
 2,Unassigned
