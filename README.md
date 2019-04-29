@@ -11,8 +11,10 @@ linux:iptables
 Splunk platform Instance type | Supported | Required | Actions required/ Comments
 ----------------------------- | --------- | -------- | --------------------------
 Search Heads | Yes | Yes | Install this add-on to all search heads
-Indexers | Yes | Conditional | Not required if you use heavy forwarders to collect data.
-Heavy Forwarders | Yes | Conditional | Not required. This add-on must be installed on either the HF or Indexers.
+Indexers | Yes | Conditional | Not required if heavy forwarders are used to collect data.
+Heavy Forwarders | Yes | Conditional | Not required.
+
+\* **This add-on must be installed on either the HF or Indexers.**
 
 ## Input Requirements
 Set the sourcetype to "linux:iptables" in the inputs.conf file on the forwarder (see [recommendations below](#recommendations-for-iptables-logging)).
@@ -25,6 +27,27 @@ i.e.
 [monitor:///var/log/iptables.log]
 disabled = 0
 sourcetype = linux:iptables
+```
+
+### Iptable Requirements
+If the iptables "log prefix" flag is utilized, setup may be needed to have the fields extracted correctly. This will be built into the add-on in future releases. For now, the transforms.conf file will need to be modified to extract this field correctly.
+
+The add-on currently supports the following syntax for the log-prefix field.
+
+```
+... ** My log prefix ** ...
+```
+
+Where "My log prefix" will be the field extracted. In the likely event that this does not match the current configurations, modify `../local/transforms.conf` with the correct regex needed.
+
+i.e.
+
+```
+# ../local/transforms.conf
+
+[iptables_log_prefix]
+REGEX = CUSTOM REGEX HERE
+FORMAT = log_prefix::$1
 ```
 
 ### Recommendations for iptables logging
