@@ -34,7 +34,7 @@ FRAME_TYPE,frame_description
 88:BA,SV (Sampled Value Transmission)
 88:CC,Link Layer Discovery Protocol (LLDP)
 88:CD,SERCOS III
-88:DC,WSMP, WAVE Short Message Protocol
+88:DC,WSMP WAVE Short Message Protocol
 88:E1,HomePlug AV MME[citation needed]
 88:E3,Media Redundancy Protocol (IEC62439-2)
 88:E5,MAC security (IEEE 802.1AE)
