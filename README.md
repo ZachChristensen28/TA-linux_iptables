@@ -1,6 +1,10 @@
 # TA-iptables
 Splunk Add-on for Linux Iptables
 
+```
+Version: 1.2.0
+```
+
 ## Sourcetype
 
 ```
