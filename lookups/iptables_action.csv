@@ -21,3 +21,5 @@ deny,blocked
 drop,blocked
 reject,blocked
 block,blocked
+BLOCK,blocked
+ALLOW,allowed

@@ -1,14 +1,18 @@
-# TA-iptables
+# TA-linux_iptables
 Splunk Add-on for Linux Iptables
 
 ```
-Version: 1.2.0
+Version: 1.3.1
+
+Release Notes:
+- added built-in support for Uncomplicated Firewall (UFW)
 ```
 
 ## Sourcetype
 
 ```
 linux:iptables
+linux:iptables:ufw
 ```
 
 ### Where to Install
@@ -16,11 +20,12 @@ Splunk platform Instance type | Supported | Required | Actions required/ Comment
 ----------------------------- | --------- | -------- | --------------------------
 Search Heads | Yes | Yes | Install this add-on to all search heads
 Indexers | Yes | Conditional | Not required if heavy forwarders are used to collect data.
-Heavy Forwarders | Yes | Conditional | Not required.
+Heavy Forwarders | Yes | Conditional | Required if used to send Splunk data.
 
-\* **This add-on must be installed on either the HF or Indexers.**
+## Uncomplicated Firewall (UFW)
+UFW handles logging of firewall rules. There would be no need to complete the following sections. Simply set the sourcetype to `linux:iptables` and the add-on will take care of the rest.
 
-## Input Requirements
+## Input Requirements (non-UFW)
 Set the sourcetype to "linux:iptables" in the inputs.conf file on the forwarder (see [recommendations below](#recommendations-for-iptables-logging)).
 
 i.e.
@@ -33,7 +38,7 @@ disabled = 0
 sourcetype = linux:iptables
 ```
 
-### Iptable Requirements
+### Iptable Requirements (non-UFW)
 If the iptables "log prefix" flag is utilized, further setup may be needed to have the log_prefix field extracted correctly. This will be built into the add-on in future releases. For now, the transforms.conf file will need to be modified to extract this field correctly.
 
 The add-on currently supports the following syntax for the log_prefix field.
