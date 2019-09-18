@@ -2,7 +2,7 @@
 Splunk Add-on for Linux Iptables
 
 ```
-Version: 1.3.1
+Version: 1.3.2
 
 Release Notes:
 - added built-in support for Uncomplicated Firewall (UFW)
