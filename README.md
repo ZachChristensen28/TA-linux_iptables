@@ -2,6 +2,11 @@
 Splunk Add-on for Linux Iptables
 
 ```
+Version: 1.3.3
+
+Release Notes:
+- added built-in support for Firewalld
+
 Version: 1.3.2
 
 Release Notes:
@@ -13,6 +18,7 @@ Release Notes:
 ```
 linux:iptables
 linux:iptables:ufw
+linux:iptables:firewalld
 ```
 
 ### Where to Install

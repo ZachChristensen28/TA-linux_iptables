@@ -23,3 +23,5 @@ reject,blocked
 block,blocked
 BLOCK,blocked
 ALLOW,allowed
+FINAL_REJECT,blocked
+STATE_INVALID_DROP,blocked
