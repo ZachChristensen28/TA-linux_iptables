@@ -9,9 +9,10 @@ Add-on has a web UI | No. This add-on does not contain any views.
 The TA-linux_iptables Add-on allows Splunk data administrators to map the linux firewall events to the [CIM](https://docs.splunk.com/Splexicon:CommonInformationModel) enabling the data to be used with other Splunk Apps, such as Enterprise Security.
 
 ```
-Version: 1.3.3
+Version: 1.3.4
 - added built-in support for Firewalld.
 - Updated README to include more information.
+- AppInspect fixes
 ```
 
 ### Where to Install
