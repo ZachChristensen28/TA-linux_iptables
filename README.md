@@ -10,7 +10,8 @@ The TA-linux_iptables Add-on allows Splunk data administrators to map the linux 
 
 ```
 Version: 1.3.3
-- added built-in support for Firewalld
+- added built-in support for Firewalld.
+- Updated README to include more information.
 ```
 
 ### Where to Install
