@@ -1,18 +1,20 @@
 # TA-linux_iptables - Add-on for Linux Iptables
 
+![GitHub](https://img.shields.io/github/license/zachchristensen28/TA-linux_iptables)
+
 Info | Description
 ------|----------
-Version | 1.3.3 - See on [Splunkbase](https://splunkbase.splunk.com/app/4490/)
+Version | 1.3.5 - See on [Splunkbase](https://splunkbase.splunk.com/app/4490/)
 Vendor Product | REHL/CentOS - Firewalld, Ubuntu - UFW, built-in IPtables
 Add-on has a web UI | No. This add-on does not contain any views.
 
 The TA-linux_iptables Add-on allows Splunk data administrators to map the linux firewall events to the [CIM](https://docs.splunk.com/Splexicon:CommonInformationModel) enabling the data to be used with other Splunk Apps, such as Enterprise Security.
 
+## Release Notes
+
 ```
-Version: 1.3.4
-- added built-in support for Firewalld.
-- Updated README to include more information.
-- AppInspect fixes
+Version: 1.3.5
+- Adding support for Splunk Cloud
 ```
 
 ### Where to Install
@@ -124,9 +126,3 @@ Source Type | Description | CIM Data Models
 ## Bugs
 Please open an issue at [github.com](https://github.com/ZachChristensen28/TA-iptables)
 
-## Versions
-
-```
-Version: 1.3.2
-- added built-in support for Uncomplicated Firewall (UFW)
-```
