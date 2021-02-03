@@ -4,8 +4,8 @@
 
 Info | Description
 ------|----------
-Version | 1.3.5 - See on [Splunkbase](https://splunkbase.splunk.com/app/4490/)
-Vendor Product | REHL/CentOS - Firewalld, Ubuntu - UFW, built-in IPtables
+Version | 1.3.6 - See on [Splunkbase](https://splunkbase.splunk.com/app/4490/)
+Vendor Product | RHEL/CentOS - Firewalld, Ubuntu - UFW, built-in IPtables
 Add-on has a web UI | No. This add-on does not contain any views.
 
 The TA-linux_iptables Add-on allows Splunk data administrators to map the linux firewall events to the [CIM](https://docs.splunk.com/Splexicon:CommonInformationModel) enabling the data to be used with other Splunk Apps, such as Enterprise Security.
@@ -13,8 +13,7 @@ The TA-linux_iptables Add-on allows Splunk data administrators to map the linux 
 ## Release Notes
 
 ```
-Version: 1.3.5
-- Adding support for Splunk Cloud
+Version: 1.3.6
 ```
 
 ### Where to Install
@@ -71,7 +70,7 @@ FORMAT = log_prefix::$1
 
 ## Recommendations for iptables logging
 
-Depending on how logging is setup on the linux instance, iptable logs could be writting to the kern.log or syslog. If needed, syslog could be sent directly to splunk and this add-on will transform the sourcetype to linux:iptables (see [Syslog support](#syslog-support) below).
+Depending on how logging is setup on the linux instance, iptable logs could be writing to the kern.log or syslog. If needed, syslog could be sent directly to splunk and this add-on will transform the sourcetype to linux:iptables (see [Syslog support](#syslog-support) below).
 
 It is recommended to have iptable logs write to it's own file in /var/log. This can be achieved by modifying the configuration files for the type of syslog being used. See the docs for the respective syslog being used.
 
@@ -97,7 +96,7 @@ The above example is matching a unique string for linux iptables and will place 
 
 ### Syslog support
 
- For this to work, the props.conf file will need to be modified to accept the syslog sourcetype. Simply enable the syslog source type in ../local/props.conf then restart splunk.
+ For this to work, copy the `syslog` stanza from `../default/props.conf` of this app and add it to the `../local/props.conf` file. 
 
 i.e.
 
@@ -105,7 +104,7 @@ i.e.
 # ../local/props.conf
 
 [syslog]
-disabled = false
+TRANSFORMS-iptables_sourcetyper = iptables_sourcetyper, iptables_ufw_sourcetyper, iptables_firewalld_sourcetyper
 ```
 
 ## Additional Required Setup
