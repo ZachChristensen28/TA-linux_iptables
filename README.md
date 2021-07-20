@@ -16,6 +16,8 @@ The TA-linux_iptables Add-on allows Splunk data administrators to map the linux 
 Version: 1.3.6
 
 - added support for firewalld rich rules - #2
+- updated to only use single sourcetype 'linux:iptables'
+- updated action lookup to use wildcards 
 ```
 
 ### Where to Install
