@@ -5,7 +5,7 @@
         "id": {
             "group": null,
             "name": "TA-linux_iptables",
-            "version": "1.3.5"
+            "version": "1.3.6"
         },
         "author": [
             {
@@ -15,13 +15,15 @@
             }
         ],
         "releaseDate": null,
-        "description": "This Technology Add-on provides CIM compliant field extractions, eventtypes and tags for the linux iptables. This add-on also supports UFW (Uncomplicated Firewall).",
+        "description": "This Technology Add-on provides CIM compliant field extractions, eventtypes and tags for the linux iptables (supports UFW and Firewalld).",
         "classification": {
             "intendedAudience": null,
             "categories": [],
-            "developmentStatus": null
+            "developmentStatus": "Production/Stable"
         },
-        "commonInformationModels": null,
+        "commonInformationModels": {
+            "Network Traffic": ">=4.18.0"
+        },
         "license": {
             "name": null,
             "text": null,
@@ -33,9 +35,9 @@
             "uri": null
         },
         "releaseNotes": {
-            "name": null,
+            "name": "README",
             "text": "./README.md",
-            "uri": null
+            "uri": "https: //splunk-iptables-ta-documentation.rtfd.io"
         }
     },
     "dependencies": null,
