@@ -16,6 +16,7 @@ The TA-linux_iptables Add-on allows Splunk data administrators to map the linux 
 ```
 Version: 1.3.7
 
+- fixed incorrect app value for UFW events - #5
 ```
 
 ## Documentation
