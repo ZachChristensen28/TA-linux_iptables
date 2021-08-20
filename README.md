@@ -3,7 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/zachchristensen28/TA-linux_iptables)
 [![Documentation Status](https://readthedocs.org/projects/splunk-iptables-ta-documentation/badge/?version=latest)](https://splunk-iptables-ta-documentation.readthedocs.io/en/latest/?badge=latest)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/ZachChristensen28/TA-linux_iptables)
-[![Splunkbase App](https://splunkbase.splunk.com/app/4490/)](https://img.shields.io/badge/Splunkbase-TA--linux__iptables-blue)
+[![Splunkbase App](https://img.shields.io/badge/Splunkbase-TA--linux__iptables-blue)](https://splunkbase.splunk.com/app/4490/)
 
 Info | Description
 ------|----------
