@@ -4,6 +4,7 @@
 [![Documentation Status](https://readthedocs.org/projects/splunk-iptables-ta-documentation/badge/?version=latest)](https://splunk-iptables-ta-documentation.readthedocs.io/en/latest/?badge=latest)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/ZachChristensen28/TA-linux_iptables)
 [![Splunkbase App](https://img.shields.io/badge/Splunkbase-TA--linux__iptables-blue)](https://splunkbase.splunk.com/app/4490/)
+[![Splunk CIM Version](https://img.shields.io/badge/Splunk%20CIM%20Version-4.x-success)](https://docs.splunk.com/Documentation/CIM/latest/User/Overview)
 
 Info | Description
 ------|----------
