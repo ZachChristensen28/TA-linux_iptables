@@ -2,10 +2,13 @@
 
 ![GitHub](https://img.shields.io/github/license/zachchristensen28/TA-linux_iptables)
 [![Documentation Status](https://readthedocs.org/projects/splunk-iptables-ta-documentation/badge/?version=latest)](https://splunk-iptables-ta-documentation.readthedocs.io/en/latest/?badge=latest)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/ZachChristensen28/TA-linux_iptables)
+[![Splunkbase App](https://img.shields.io/badge/Splunkbase-TA--linux__iptables-blue)](https://splunkbase.splunk.com/app/4490/)
+[![Splunk CIM Version](https://img.shields.io/badge/Splunk%20CIM%20Version-4.x-success)](https://docs.splunk.com/Documentation/CIM/latest/User/Overview)
 
 Info | Description
 ------|----------
-Version | 1.3.6 - See on [Splunkbase](https://splunkbase.splunk.com/app/4490/)
+Version | 1.3.7 - See on [Splunkbase](https://splunkbase.splunk.com/app/4490/)
 Vendor Product | RHEL/CentOS - Firewalld, Ubuntu - UFW, built-in IPtables
 Add-on has a web UI | No. This add-on does not contain any views.
 
@@ -13,23 +16,17 @@ The TA-linux_iptables Add-on allows Splunk data administrators to map the linux 
 
 ## Release Notes
 
-```
-Version: 1.3.6
+```text
+Version: 1.3.7
 
-Notice:
-   This updated simplifies the number of sourcetypes down to a single sourcetype (linux:iptables). Any existing reports/alerts/views that are utilizing the old sourcetypes ("linux:iptables:ufw" or "linux:iptables:firewalld") will be impacted. Verify before updating to this version. 
-
-- added support for firewalld rich rules - #2
-- updated to only use the single sourcetype, 'linux:iptables'
-- updated action lookup to use wildcards
+- fixed incorrect app value for UFW events - #5
+- updated regex for different UFW log formats - #8
 ```
 
 ## Documentation
 
 Full documentation can be found at https://splunk-iptables-ta-documentation.rtfd.io.
 
-
 ## Issues or Feature Requests
 
 Please open an issue or submit feature requests at [github.com](https://github.com/ZachChristensen28/TA-iptables)
-
