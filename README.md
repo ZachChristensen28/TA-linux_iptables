@@ -1,10 +1,16 @@
 # TA-linux_iptables - Add-on for Linux Iptables
 
 ![GitHub](https://img.shields.io/github/license/zachchristensen28/TA-linux_iptables)
-[![Documentation Status](https://readthedocs.org/projects/splunk-iptables-ta-documentation/badge/?version=latest)](https://splunk-iptables-ta-documentation.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://github.com/ZachChristensen28/splunk-iptables-ta-documentation/actions/workflows/ci.yml/badge.svg)](https://splunk-iptables.ztsplunker.com)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/ZachChristensen28/TA-linux_iptables)
 [![Splunkbase App](https://img.shields.io/badge/Splunkbase-TA--linux__iptables-blue)](https://splunkbase.splunk.com/app/4490/)
 [![Splunk CIM Version](https://img.shields.io/badge/Splunk%20CIM%20Version-4.x-success)](https://docs.splunk.com/Documentation/CIM/latest/User/Overview)
+
+## Documentation
+
+Full documentation can be found at [https://splunk-iptables.ztsplunker.com](https://splunk-iptables.ztsplunker.com).
+
+## About
 
 Info | Description
 ------|----------
@@ -22,10 +28,6 @@ Version: 1.3.7
 - fixed incorrect app value for UFW events - #5
 - updated regex for different UFW log formats - #8
 ```
-
-## Documentation
-
-Full documentation can be found at https://splunk-iptables-ta-documentation.rtfd.io.
 
 ## Issues or Feature Requests
 
