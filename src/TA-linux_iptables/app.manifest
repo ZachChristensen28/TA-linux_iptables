@@ -36,8 +36,8 @@
         },
         "releaseNotes": {
             "name": "README",
-            "text": "./README.md",
-            "uri": "https: //splunk-iptables-ta-documentation.rtfd.io"
+            "text": "./README.txt",
+            "uri": "https://splunk-iptables.ztsplunker.com"
         }
     },
     "dependencies": null,
