@@ -25,7 +25,8 @@ The TA-linux_iptables Add-on allows Splunk data administrators to map the linux 
 ```text
 Version: 1.3.8
 
-- Adding sample configuration for the syslog sourcetype if IPtable data is mixed with syslog data.
+- Added sample configuration for the syslog sourcetype if IPtable data is mixed with syslog data.
+- Updated log_prefix field extraction to consider log prefixes surrounded with quotes.
 ```
 
 ## Issues or Feature Requests
