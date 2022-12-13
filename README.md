@@ -1,10 +1,13 @@
 # TA-linux_iptables - Add-on for Linux Iptables
 
+[![TA-linux_iptables](./docs/assets/images/linux-iptables-large.png)](https://splunk-iptables.ztsplunker.com)
+
 ![GitHub](https://img.shields.io/github/license/zachchristensen28/TA-linux_iptables)
-[![Documentation Status](https://github.com/ZachChristensen28/splunk-iptables-ta-documentation/actions/workflows/ci.yml/badge.svg)](https://splunk-iptables.ztsplunker.com)
+[![Documentation Status](https://github.com/ZachChristensen28/TA-linux_iptables/actions/workflows/docs-caller.yml/badge.svg)](https://splunk-iptables.ztsplunker.com)
+[![Splunk Appinspect](https://github.com/ZachChristensen28/TA-linux_iptables/actions/workflows/appinspect-caller.yml/badge.svg)](https://github.com/ZachChristensen28/TA-linux_iptables/actions/workflows/appinspect-caller.yml)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/ZachChristensen28/TA-linux_iptables)
 [![Splunkbase App](https://img.shields.io/badge/Splunkbase-TA--linux__iptables-blue)](https://splunkbase.splunk.com/app/4490/)
-[![Splunk CIM Version](https://img.shields.io/badge/Splunk%20CIM%20Version-4.x-success)](https://docs.splunk.com/Documentation/CIM/latest/User/Overview)
+[![Splunk CIM Version](https://img.shields.io/badge/Splunk%20CIM%20Version-5.x%20|%204.x-success)](https://docs.splunk.com/Documentation/CIM/latest/User/Overview)
 
 ## Documentation
 
@@ -31,4 +34,4 @@ Version: 1.3.8
 
 ## Issues or Feature Requests
 
-Please open an issue or submit feature requests at [github.com](https://github.com/ZachChristensen28/TA-iptables/issues)
+Please open an issue or submit feature requests at [GitHub](https://github.com/ZachChristensen28/TA-iptables/issues)

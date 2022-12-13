@@ -1,0 +1,83 @@
+site_name: IPtables Add-on for Splunk Documentation
+edit_uri: ""
+repo_url: https://github.com/ZachChristensen28/TA-linux_iptables
+repo_name: ZachChristensen28/TA-linux_iptables
+
+plugins:
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - attr_list
+  - meta
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - pymdownx.snippets
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+
+theme:
+  name: material
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    # - header.autohide
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - content.code.annotate
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/zachary-christensen28/
+    - icon: fontawesome/brands/github
+      link: https://github.com/ZachChristensen28
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ZachTheSplunker
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Prepare Logs for Splunk: getting-started/prepare-logs-for-splunk.md
+      - Where to Install: getting-started/where-to-install.md
+      - Configure Inputs:
+          - Configure Universal Forwarder: getting-started/configure-inputs/configure-inputs.md
+      - Troubleshooting:
+          - Troubleshoot Monitoring Inputs: getting-started/troubleshooting/troubleshoot-inputs.md
+  - Guides:
+      - Custom Log Prefix: guides/guide-custom-log-prefix.md
+  - Reference:
+      - Sourectypes: reference/reference-sourcetypes.md
+      - Lookup Tables: reference/reference-lookups.md
+      - Changelog:
+          - Release Notes: reference/releases/index.md
+          - Release History: reference/releases/release-history.md
